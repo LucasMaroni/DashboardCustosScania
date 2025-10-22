@@ -139,12 +139,12 @@ def create_header():
         # 🔧 LOGOS ATUALIZADAS COM WIDTH 250
         logo_col1, logo_col2 = st.columns(2)
         with logo_col1:
-            st.image("scania.png", width=250)  # Logo Scania
+            st.image("maroni.png", width=250)  # Logo Scania
         with logo_col2:
-            st.image("maroni.png", width=250)  # Logo Maroni
+            st.image("scania.png", width=250)  # Logo Maroni
     
     with col2:
-        st.markdown("<h1 class='main-header'>DASHBOARD CORPORATIVO DE CUSTOS</h1>", unsafe_allow_html=True)
+        st.markdown("<h1 class='main-header'>RELATÓRIO DE CUSTOS | SCANIA</h1>", unsafe_allow_html=True)
         st.markdown("<div class='sub-header'>Análise de Custos por Concessionária Scania</div>", unsafe_allow_html=True)
     
     with col3:
@@ -699,4 +699,5 @@ def main():
     create_tables(df_filtrado)
 
 if __name__ == "__main__":
+
     main()
